@@ -35,3 +35,17 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)$ index.php?sayfa=$1 [QSA]
 RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?sayfa=$1 [QSA]
 ```
+
+### Veritabanı Tabloları
+
+| Kolon  | Tür	| Yorum |
+| ---- | ---- | ---- |
+| id     | int(11) Otomatik Artır|  |	
+| kAdi   | varchar(150)	|  |
+| adSoy  | varchar(150)	|  |
+| ePosta | varchar(150)	|  |
+| parola | varchar(300)	|  |
+| yetki  | int(5) [1]	|  |
+| resim  | varchar(300) [ ]	|  |
+| kTarih | timestamp [current_timestamp()]	|  |
+| gTarih | timestamp [0000-00-00 00:00:00]	|  |
